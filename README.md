@@ -1,2 +1,2 @@
 # programmer12355.github.io
-My programming site on github
+Tohle je stránka s mým portfoliem. Jsou tu malé 2d hry.
