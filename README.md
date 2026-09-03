@@ -1,2 +1,2 @@
 # programmer12355.github.io
-Tohle je stránka s mým portfoliem. Jsou tu malé 2d hry.
+This is my website with portfolio. It contains small 2d games.
