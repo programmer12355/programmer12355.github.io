@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>My web</h1>
+    
+    <!-- Boční menu -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Breakout.html">Breakout</a></li>
+            <li><a href="Arcade_Shooter.html">Arcade Shooter</a></li>
+            <li><a href="About_me.html">About Me</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Toggle tlačítko pro mobilní zařízení -->
+    <button class="toggle-sidebar" id="toggleBtn">☰</button>
+
+    <!-- Hlavní obsah -->
+    <main>
+        <div class="Text">
+            <h1 style="font-family: 'Press Start 2P', cursive;"> Portfolio - programmer12355 </h1>
+        </div>
+
+        <hr>
+
+        <h2 style="text-align: center;font-family: 'Press Start 2P', cursive;" id="games">Games🎮</h2>
+        <h2>Breakout</h2>
+        <a href="Breakout.html" target="_self" style="display: inline-block;">
+            
+            <h3>Click for more info</h3>
+            <div>
+                <img src="pong.png" height="150">
+                <img src="Portfolio_Breakout_2.png" alt="image" height="150">
+                <img src="Portfolio_Breakout_3.png" alt="image" height="90">
+            </div>
+            
+        </a>
+        <p style="padding-right: 10px;">This is a <span style="background-color: tomato;text-decoration: underline;">modified</span> version of the Breakout game. You move the paddle and bounce the ball. Each hit adds a point. If you miss the ball, you lose. There are no power-ups or special actions, just pure ball bouncing. The score is not saved.</p>
+
+        <hr>
+        <h2>Arcade Shooter</h2>
+
+        <a href="Arcade_Shooter.html" target="_self" style="display: inline-block;">
+            <h3>Click for more info</h3>
+            <div style="display: flex;justify-content: space-between;gap: 40px;">
+                <img src="Arcade_Shooter_1.png" alt="image" style="height: 200px;">
+                <img src="Arcade_Shooter_3.png" alt="image" style="height: 200px;">
+                <img src="Arcade_Shooter_2.png" alt="image" style="height: 200px;">
+            </div>
+        </a>
+        <p style="padding-right: 10px;">This is an Arcade Shooter game. You move a spaceship and shoot descending aliens. For each alien you hit, you get 1 point, and if you miss one, you lose 5 points. You win by reaching 100 points and lose if you get to -50 points. The score is not saved.</p>
+
+    </main>
+    
+    <script src="script.js"></script>
+    
 </body>
 </html>

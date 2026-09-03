@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Boční menu -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Breakout.html">Breakout</a></li>
+            <li><a href="Arcade_Shooter.html" class="active">Arcade Shooter</a></li>
+            <li><a href="About_me.html">About Me</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Toggle tlačítko pro mobilní zařízení -->
+    <button class="toggle-sidebar" id="toggleBtn">☰</button>
+
+    <main>
+        <h1 style="text-align: center; font-family: 'Orbitron', sans-serif;">Arcade Shooter</h1>
+    
+    
+        <div style="display: flex; justify-content:space-between; align-items: center;">
+            <div>
+                <p style="padding-right: 10px;">This is an Arcade Shooter game. You move a spaceship and shoot descending aliens. For each alien you hit, you get 1 point, and if you miss one, you lose 5 points. You win by reaching 100 points and lose if you get to -50 points. The score is not saved.</p>
+                <h4>Dev: programmer12355</h4>
+                <h4>Difficulty: Medium</h4>
+                <h4>Platform: Windows</h4>
+                <h4>Programming Language: C++</h4>
+                <h4>Status: Complete + you can write what to add to the email on the "About Me" page</h4>
+                <h4>Rating: <span style="font-size: 24px; color: gold;">&#9733;&#9733;&#9733;&#9733;&#9734;</span></h4>
+                
+            </div>
+            
+            <img src="Arcade_Shooter_3.png" alt="Description of the image" height="300">
+        </div>
+        <video src="Arcade_vid.mp4" width="500px" controls></video>
+        <div>
+            <a href="Arcade shooter.zip">
+                <button id = "downloadButton">Download</button>
+            </a>
+        </div>
+       
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

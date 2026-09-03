@@ -1,0 +1,146 @@
+/* Boční menu */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #006605;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 0;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.sidebar-menu a:hover {
+    background-color: #34495e;
+    border-left-color: #3498db;
+    padding-left: 25px;
+}
+
+.sidebar-menu a.active {
+    background-color: #3498db;
+    border-left-color: #2980b9;
+}
+
+/* Toggle tlačítko */
+.toggle-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    background-color: #2c3e50;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-sidebar:hover {
+    background-color: #34495e;
+}
+
+/* Hlavní obsah */
+main {
+    margin-left: 250px;
+    padding-top: 0;
+    transition: margin-left 0.3s ease;
+}
+
+main.expanded {
+    margin-left: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .toggle-sidebar {
+        display: block;
+    }
+    
+    main {
+        margin-left: 0;
+    }
+    
+    .sidebar.hidden {
+        display: none;
+    }
+}
+
+.Text{
+    background-image: url('images.jpg');
+    background-size: cover;       /* Roztáhne obrázek na celou plochu */
+    background-position: center;  /* Zarovná obrázek na střed */
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+h2{
+    font-family: 'Orbitron', sans-serif;
+    
+}
+#downloadButton{
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    background-color: orange;
+    border-radius: 8px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+.pasek-Breakout{
+    position: fixed;      
+    bottom: 0;            
+    left: 0;              
+    width: 100%;          
+    height: 80px;           /* Pevná výška pásku */
+    background-color: #03eb49; 
+    color: white;         
+    font-family: Arial, sans-serif;
+    padding-left: 20px;     /* Odsazení textu od levého okraje */
+    box-sizing: border-box; /* Zajistí, že padding nezvětší šířku pásku */
+
+    /* Aktivace Flexboxu pro zarovnání na ose Y */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
